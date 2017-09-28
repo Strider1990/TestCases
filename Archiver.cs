@@ -13,7 +13,7 @@ public override void ItemUpdating(SPItemEventProperties properties)
 		// Set properties
 		Hashtable ht = properties.ListItem.Properties;
 		foreach (DictionaryEntry de in ht)
-			archiveItem[de.Key] = de.Value
+			archiveItem[de.Key] = de.Value;
 		archiveItem.Update();
 
 		/* Delete relevant list item from list_request */
